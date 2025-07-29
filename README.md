@@ -12,7 +12,7 @@ Each folder contains a self-contained mini project built with React. These aren'
 | Project | Description | Features |
 |--------|-------------|----------|
 | 🧠 `tictactoe` | Classic Tic Tac Toe game | Two-player logic, board UI, turn tracking |
-| 🎨 `color-picker` | *(Coming Soon)* A tool to pick & preview colors | useState, live preview, hex/RGB copy |
+| 🎨 `color-picker` | A tool to pick & preview colors | useState, live preview, hex/RGB copy |
 
 ---
 
