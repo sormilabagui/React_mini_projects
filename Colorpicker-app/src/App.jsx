@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
 import Colorpalette from "./components/Colorpalette";
 
-const colors = [
+
+const App = () => {
+
+  const colors = [
   "#FF6B6B",
   "#FFD93D",
   "#6BCB77",
@@ -14,18 +17,39 @@ const colors = [
   "#F08A5D",
   "#B83B5E"
 ];
+const [selectedColor, setSelectedColor] = useState(null);
 
-function App() {
+
   return (
     
-      <div className="app">
-        <h1>Color Picker Palette</h1>
-        <div className="color-grid">
-          {colors.map((color, index) => (
-            <Colorpalette key={index} color={color} />
-          ))}
-        </div>
+      <div className="app-container">
+      <div className="grid-section">
+        {colors.map((color, index) => (
+          <Colorpalette key={index} color={color} onColorClick={setSelectedColor} />
+        ))}
       </div>
+
+      <div className="detail-section">
+        {selectedColor ? (
+          <div className="detail-box">
+            <div
+              className="big-color"
+              style={{ backgroundColor: selectedColor }}
+            ></div>
+            <p>Hex: {selectedColor}</p>
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText(selectedColor);
+              }}
+            >
+              Copy
+            </button>
+          </div>
+        ) : (
+          <p>Select a color</p>
+        )}
+      </div>
+    </div>
     
   );
 }
