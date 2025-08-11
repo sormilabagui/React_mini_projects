@@ -1,6 +1,6 @@
 .color-box-wrapper {
   position: relative;
-  display: inline-block;
+  display:flex;
 }
 
 .copied-popup {
@@ -19,10 +19,10 @@
 }
 
 .color-box {
-  width: 120px;
-  height: 120px;
+  width: 70px;
+  height: 70px;
   border-radius: 12px;
-  margin: 10px;
+  margin: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
