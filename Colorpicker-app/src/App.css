@@ -6,23 +6,37 @@
   justify-content: center;
 }
 */
-.app-container {
+/*.app-container {
   display: flex;
   padding: 20px;
   gap: 20px;
 }
-
+*/
+.maincontainer{
+  width: 370px;
+  height: 75vh;
+  background: #fba7d9;
+  border-radius: 20px;
+  margin-top: 50px;
+  border: 2px solid rgb(206, 212, 206);
+}
 .grid-section {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  padding: 4px;
   flex: 1;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(212, 206, 206) ;
+  background: transparent;
+  background-color: white;
+  backdrop-filter: blur(50%);
 }
 
 .detail-section {
   flex: 1;
   padding: 10px;
-  border-left: 1px solid #ccc;
+  
 }
 
 .detail-box {
@@ -33,7 +47,7 @@
 
 .big-color {
   width: 100%;
-  height: 100px;
+  height: 60px;
   border-radius: 8px;
   margin-bottom: 10px;
 }
