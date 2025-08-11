@@ -15,7 +15,9 @@ const App = () => {
   "#A28089",
   "#00B85D",
   "#F08A5D",
-  "#B83B5E"
+  "#B83B5E",
+  "#55e2e7",
+  "#e755cf"
 ];
 const [selectedColor, setSelectedColor] = useState(null);
 
